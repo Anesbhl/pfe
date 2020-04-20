@@ -1,0 +1,59 @@
+.accueil{
+    position: absolute;
+    top: 20%;
+    left: 17%;
+    width: 70%;
+    z-index: -1;
+}
+.accueil h1{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.accueil p{
+    margin-bottom: 60px;
+}
+.ligne1{
+    width: 30%;
+    height: 1px;
+    background: #3c4858;
+    position: absolute;
+    left: 30%;
+}
+/***********logo***********/
+.logo{
+    position: absolute;
+    top: 25px;
+    right: 50px;
+}
+/*********bienvenue**********/
+.bien{
+    position: absolute;
+    top: 50px;
+    left: 40%;
+    text-align: center;
+    z-index: -1;
+}
+.reserv{
+
+}
+.btn{
+    position: absolute;
+    
+    bottom: 50px;
+    right: 20%;
+    background: -webkit-linear-gradient(left,rgb(23, 27, 32),#3c4858);
+    border-color: #3c4858;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 36px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background: -webkit-linear-gradient(left,#3c4858,rgb(23, 27, 32));
+    color: #fff;
+}

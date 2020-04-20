@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    
+}
+.body{
+    background-color: #f3f5f9 ;
+}
+/*------------------sidebar----------------*/
+.side_content{
+    display: flex;
+    position: relative;
+}
+.side_content #sidebar{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100vh;
+    text-align: center;
+    background: -webkit-linear-gradient(left,#252d36,#3c4858);
+    transform-origin: left;
+    transform: perspective(1200px) rotatey(90deg);
+    transition: all 400ms ease;
+}
+.side_content #sidebar h2{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.side_content #sidebar ul li{
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.side_content #sidebar ul li a{
+    color: #bdb8d7;
+    display: block;
+    text-decoration: none;
+}
+.side_content #sidebar ul li a .fas{
+    width: 25px;
+}
+.side_content #sidebar ul li:hover{
+    background: #3c4858
+    
+}
+.side_content #sidebar ul li:hover a{
+    color: #fff;
+}
+#sidebar.active{
+  transform:perspective(1200px) rotateY(0deg);
+}
+#toggle-btn{
+    position: absolute;
+    left: 70px;
+    top: 20px;   
+    transition:left 200ms linear 0ms,transform 300ms ease 100ms;
+}
+#toggle-btn.active{
+    left:230px;
+    transform:rotate(360deg);
+}
+#toggle-btn span{
+    position: relative;
+    top: 0px;
+    display: block;
+    background: -webkit-linear-gradient(left,#252d36,#3c4858);
+    width: 30px;
+    height: 5px;
+    margin: 5px 0px;
+    cursor: pointer;
+    transition: transform 300ms ease 200ms;
+}
+#toggle-btn.active span:nth-child(1){
+    top: 10px;
+    transform: rotate(45deg);
+}
+#toggle-btn.active span:nth-child(2){
+    opacity: 0;
+}
+#toggle-btn.active span:nth-child(3){
+    top: -10px;
+    transform: rotate(-45deg);
+}
+/*------------------end of sidebar----------------*/
